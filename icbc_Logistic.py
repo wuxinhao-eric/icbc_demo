@@ -23,3 +23,5 @@ Specificity = metrics.scorer.recall_score(y_test,log_predict,pos_label=0)
 print('模型准确率：',Accuracy*100)
 print('正例覆盖率：',Sensitivity*100)
 print('负例覆盖率：',Specificity*100)
+
+print(pd.Series(log_predict,y_test).value_counts())
